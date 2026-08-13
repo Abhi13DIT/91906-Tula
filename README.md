@@ -5,12 +5,21 @@ Date: 5 Aug 2026
 Purpose: My program will help South Asians track their nutrition without having to adapt to western focused nutrition tracking tools
 
 Instructions
-
 Step 1
-Download my program as a zip file. 
+Download my code as a zip file. 
 
 Step 2
 Open file name called Tulamain.py
-Ensure that the following libraries are installed
+
+Libraries:
+
+Built in libraries (Do not need to be installed): 
+- tkinter
+- sqlite3
+- datetime
+
+External libraries (MUST be installed):
+- tkmacosx
 
 Step 3
+
