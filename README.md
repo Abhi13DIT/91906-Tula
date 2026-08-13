@@ -53,3 +53,24 @@ Do not run 'add_meals.py' unless you want to add the sample meals
 to the database again, as this may create duplicate entries.
 
 If the database isn't working, may need to create new data source and run database.py and add_meals.py again
+
+HOW TO USE MY PROGRAM:
+1. From intro page, click on About Us button to reach the About Us page
+2. Click back to go back to intro page
+3. Click Get started to reach the preform
+4. Read preform before form
+5. Fill out the form
+6. Once you are on the home page, you can navigate to the nutrition tracking page, help page and recipe page
+   
+Nutrition tracking page
+1. Click Log a meal
+2. Select a meal from the drop down and click log meal
+3. See updated nutrition tracker from your logged meal
+4. When logging a meal, you can also click on Today's logged meals to view
+
+Recipe page
+1. Click Recipe
+2. Click on the meal you want to view the recipe for 
+3. See pop up for recipe to follow!
+
+
