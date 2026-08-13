@@ -35,7 +35,7 @@ pip install tkmacosx
 4. Run the program
 Open the downloaded project folder.
 
-Open 'Tulamain.py' using IDLE, PyCharm, or another Python IDE.
+Open 'Tulamain.py' using IDLE, PyCharm, or another Python IDE. Preferably IDLE.
 
 Run 'Tulamain.py'
 The nutrition tracker should open.
