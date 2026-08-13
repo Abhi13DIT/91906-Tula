@@ -55,7 +55,7 @@ logged_meals = []
 # ------------------------------------Setup
 window = tk.Tk()
 window.title("Tula - South Asian Nutrition tracker")
-window.geometry("470x800")
+window.geometry("470x850")
 window.configure(bg=theme) 
 
 # Creating style variable to customise Progress bars and Comboboxes
