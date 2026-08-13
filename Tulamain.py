@@ -55,7 +55,7 @@ logged_meals = []
 # ------------------------------------Setup
 window = tk.Tk()
 window.title("Tula - South Asian Nutrition tracker")
-window.geometry("470x700")
+window.geometry("470x800")
 window.configure(bg=theme) 
 
 # Creating style variable to customise Progress bars and Comboboxes
@@ -106,10 +106,10 @@ def check_new_day():
 
         update_nutrition_tracker()
 
-# This file reads the form input and calculates values for nutrition tracker       
+"""This file reads the form input and calculates macronutrient goals for nutrition tracker"""       
 def read_input():
     global name_store
-    
+
     name_store = name_entry.get()
     age_string = age_entry.get()
     gender_store = gender_entry.get()
@@ -118,7 +118,7 @@ def read_input():
     activity_store = activity_entry.get()
     goal_store = goal_entry.get()
     dietary_store = dietary_entry.get()
-    
+ 
     if (
         name_store == ""
         or age_string == ""
@@ -135,6 +135,8 @@ def read_input():
     age_store=int(age_string)
     weight_store=int(weight_string)
     height_store=int(height_string)
+
+    print(name_store, age_store, gender_store, weight_store, height_store, activity_store, goal_store, dietary_store) 
 
     # Dictionary values
     user_profile["name"] = name_store
@@ -594,7 +596,7 @@ def show_logged_meals():
 def is_alpha(proposed_value):
     if proposed_value=="": return True
     for char in proposed_value:
-        if not (char.isalpha() or char ==" " or char=="-" or char=="'"): return False
+        if not (char.isalpha() or char == " " or char == "-" or char == "'"): return False
     return True
 
 def is_int(proposed_value):
@@ -610,7 +612,7 @@ def show_error(message):
     window.after(2000, lambda: lbl_error.config(text=''))
 
 def on_invalid_alpha():
-    show_error("Please use letters, spaces, hyphens and apostrophes")
+    show_error("Please use letters, spaces, hyphens, and apostrophes")
 
 def on_invalid_int():
     show_error("Please only use whole numbers (e.g 38)")    
@@ -630,7 +632,7 @@ get_started = Button(
     intro_frame,
     text="Get started",
     font=("Kefa", 20, "bold"),
-    width=165,
+    width=250,
     height=55,
     bg=button_colour,
     overbackground=overbg_colour,
@@ -641,7 +643,7 @@ about_us = Button(
     intro_frame,
     text="About Us",
     font=("Kefa", 20, "bold"),
-    width=165,
+    width=250,
     height=55,
     bg=button_colour,
     overbackground=overbg_colour,
@@ -684,7 +686,7 @@ to_form = Button(
     preform_frame,
     text="Proceed to form",
     font=("Kefa", 20, "bold"),
-    width=165,
+    width=250,
     height=55,
     bg=button_colour,
     overbackground="#FBB117",
@@ -779,7 +781,7 @@ submit_button = Button(
     form_frame,
     text="Submit form",
     font=("Kefa", 18, "bold"),
-    width=190,
+    width=250,
     height=50,
     bg="#FFF380",
     overbackground="#FBB117",
@@ -808,7 +810,7 @@ nutrition_tracker = Button(
     home_frame,
     text="Nutrition tracker",
     font=("Kefa", 20, "bold"),
-    width=185,
+    width=250,
     height=55,
     bg=button_colour,
     overbackground="#FBB117",
@@ -820,7 +822,7 @@ recipes = Button(
     home_frame,
     text="Recipes",
     font=("Kefa", 20, "bold"),
-    width=185,
+    width=250,
     height=55,
     bg=button_colour,
     overbackground="#FBB117",
@@ -832,7 +834,7 @@ help = Button(
     home_frame,
     text="Help",
     font=("Kefa", 20, "bold"),
-    width=185,
+    width=250,
     height=55,
     bg=button_colour,
     overbackground="#FBB117",
@@ -873,7 +875,7 @@ log_a_meal = Button(
     nutrition_frame,
     text="Log a meal",
     font=("Kefa", 20, "bold"),
-    width=185,
+    width=250,
     height=55,
     bg=button_colour,
     overbackground="#FBB117",
@@ -924,7 +926,7 @@ log_selected_meal = Button(
     log_frame,
     text="Log selected meal",
     font=("Kefa", 20, "bold"),
-    width=205,
+    width=300,
     height=55,
     bg=button_colour,
     overbackground="#FBB117",
@@ -936,7 +938,7 @@ see_meals = Button(
     log_frame,
     text="Today's logged meals",
     font=("Kefa", 20, "bold"),
-    width=205,
+    width=300,
     height=55,
     bg=button_colour,
     overbackground="#FBB117",
